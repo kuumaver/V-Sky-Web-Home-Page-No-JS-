@@ -1,0 +1,2508 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    /* width: 100%;
+   background-image: linear-gradient(to bottom right, #000000, #262626);
+   background-repeat: no-repeat; */
+   background-color: rgb(255, 255, 255);
+  }
+
+.headernav{
+    overflow: hidden;
+    z-index: 1;
+    width: 100%;
+    position: fixed;
+    height: 10vh;
+    background-color: black;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-left: 10vh;
+    /* padding-top: 20px; */
+    padding: 40px;
+    box-shadow: 2px 2px 8px #00000097;
+    z-index: 20;
+    /* border-style: solid; */
+    border-color: red;
+
+
+
+}
+
+#V-skylogo{
+    width: 15rem;
+}
+
+.headcontent{ 
+    /* border-style: solid; */
+    width: 170vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#headerlogo{
+    width: 19rem;
+}
+
+.logoxnav{
+  display: flex;
+  justify-content: space-between;
+  /* border-style: solid; */
+  width: 97vh;
+}
+
+.navigation{
+    /* border-style: solid; */
+    list-style: none;
+    text-decoration: none;    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50vh;
+    color: white;
+}
+
+/*  */
+
+.nav-bar {
+  border-color: red;
+  /* border-style: solid; */
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  position: relative;
+  background-color: black;
+  padding: 12px 20px;
+  padding-top:30px;
+ 
+}
+
+.menu {display: flex;}
+.menu li {padding-left: 50px;}
+.menu li {padding-top: 5px;}
+.menu li a {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  transition: 0.15s ease-in-out;
+  position: relative;
+  /* text-transform: uppercase; */
+}
+.menu li a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: white;
+  transition: 0.15s ease-in-out;
+}
+.menu li a:hover:after {width: 100%;}
+.open-menu , .close-menu {
+  position: absolute;
+  color:white;
+  cursor: pointer;
+  font-size: 1.5rem;
+  display: none;
+}
+.open-menu {
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+.close-menu {
+  top: 20px;
+  right: 20px;
+}
+#check {display: none;}
+/* @media(max-width: 610px){
+  .menu {
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      width: 85%;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      right: -100%;
+      z-index: 100;
+      background-color: rgb(0, 0, 0);
+      transition: all 0.2s ease-in-out;
+  }
+
+  #V-skylogo{
+    width: 10rem;
+}
+
+  .menu li {margin-top: 40px;}
+  .menu li a {padding: 10px;}
+  .open-menu , .close-menu {display: block;}
+  #check:checked ~ .menu {right: 0;}
+} */
+
+
+/*  */
+
+
+.booknow{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-width: 2px;
+  border-style: solid;
+  width: 18vh;
+  color: white;
+  height: 5vh;
+  padding: 30px;
+  /* padding-top: px; */
+  border-radius: 80px;
+  transition: color .3s ease-in;
+}
+
+.booknow:hover{
+  color: #fdb540;
+}
+
+
+.booknowcont{
+  display: flex;
+  justify-content: right;
+  /* border-style: solid; */
+  border-color: red;
+  width: 90vh;
+}
+
+
+.booknow a{
+  list-style: none;
+  text-decoration: none; 
+  color: white;
+  transition: color .3s ease-in;
+}
+
+#linkbook{
+  text-decoration: none;
+}
+
+.booknow a:hover{
+  color: #fdb540;
+}
+
+
+.video-container video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+}
+
+ 
+
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.video-container video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* min-width: 100%;
+  min-height: 100%; */
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  /* border-bottom: solid; */
+  color: black;
+  border-width: 1px;
+  /* border-style: solid; */
+}
+
+.overlay1{
+  /* border-style: solid; */
+  width: 95vh;
+  /* height: 65vh; */
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+  /* position: absolute;
+  top:5vh; */
+  /* bottom: 0px; */
+}
+
+.overlay0{
+  display: flex;
+  justify-content:space-between;
+  flex-direction: column;
+  align-items: center;
+  width: 70vh;
+  height: 70vh;
+ 
+} 
+
+.exploreSection{
+  /* position: relative; */
+  bottom: 7vh;
+  display: flex;
+  justify-content: left;
+  /* border-style: solid; */
+  width: 100%;
+}
+
+.explore{
+  /* border-style: solid; */
+  width: 80vh;
+}
+
+.explore p{
+  font-weight: 490;
+  text-align: left;
+  font-size: 2rem;
+}
+
+.explore span{
+  font-weight: 500;
+  color: #FFAB10;
+}
+
+.overlay2{
+  /* border-style: solid; */
+  display: flex;
+  align-items: center;
+  padding-top: 100px;
+  padding: 10px;
+}
+
+.beginnow{
+  /* border-style: solid; */
+  border-color: red;
+}
+
+.overlay2 p{
+  /* border-style: solid; */
+  font-weight: 500;
+  font-size: 1.5rem;
+  padding: 10px;
+}
+
+.overlay3{
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  width: 60vh;
+  filter: drop-shadow(0 0 5px #ffffff7c);
+  /* border-style: solid; */
+ 
+}
+
+.overlay3 p{
+  /* border-style: solid; */
+  font-size: 1.5rem;
+  /* padding: 9px; */
+  padding-top: 20px;
+  /* font-style: italic; */
+  /* padding-bottom: 1px; */
+  /* width: 70px; */
+  
+}
+
+.overlay {
+  /* border-style: solid; */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: whitesmoke;
+  text-align: center;
+  padding: 20px;
+  text-shadow:2px 2px 8px #00000097; ;
+}
+
+.overlay h1 {
+  font-size: 10rem;
+  margin: 0;
+  /* border-style: solid; */
+}
+
+
+.desc {
+  font-size: 1.5rem;
+  width: 40vh;
+  /* border-style: solid; */
+}
+
+.V-skySeal{
+  color: red;
+  /* border-style: solid; */
+}
+
+
+
+/* @keyframes V-SkySeal {
+  0% {
+    filter: drop-shadow(0 0 5px #0000007c);  }
+
+  50% {
+    filter: drop-shadow(0 0 50px #ffffffd4);
+  }
+
+  100% {
+    filter: drop-shadow(0 0 5px #0000007c);
+  }
+} */
+
+#V-SkySeal {
+  width: 24.7rem;
+  margin-top: 50px;
+  filter: drop-shadow(0 0 150px #0000007c);
+  animation: V-SkySeal 3s infinite;
+   transition: filter .9s ease, width 1s;
+  }
+
+#V-SkySeal:hover {
+  /* animation: none; */
+  filter: drop-shadow(0 0px 60px rgb(255, 255, 255)); /* Increased shadow on hover */
+  width: 26rem;
+}
+
+#V-skySeal span{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+
+/* new page 2 */
+.newpage2banner{
+  /* border-style: solid; */
+  font-family:'Roboto Condensed';
+  border-color: rgb(38, 29, 172);
+  display: flex;
+  justify-content: center;
+  background-color: #fdb540;
+
+}
+
+.newpage2banner img{
+  /* border-style: solid; */
+  overflow: hidden;
+  border-color: red;
+  height: 40vh;
+  width: 200vh;
+  display: flex;
+  justify-content: center;
+}
+
+#mountain{
+  opacity: 0.4;
+}
+
+#bannerimgoverlay{
+  position: absolute;
+  position: absolute;
+  top: 100vh;
+  left: 0px;
+  width: 100%;
+  height: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px;
+  /* text-shadow:2px 2px 8px #00000097;  */
+
+}
+
+.bannerimgoverlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 95%;
+  height: 100%;
+  display: flex;
+  /* border-style: solid; */
+  align-items: center;
+  justify-content: center;
+  color: rgb(0, 0, 0);
+  /* text-align: center; */
+  /* font-size: 5rem; */
+  /* text-shadow:2px 2px 8px #00000097;  */
+  /* background-color: #fdb540; */
+  
+}
+
+.p1c{
+  /* border-style: solid; */
+  line-height: 1;
+  padding-left: 50px;
+  margin-left: 30px;
+}
+
+#p1{
+  text-align: left;
+  /* padding-left: 50px; */
+  font-weight: 1000;
+  font-size: 4rem;
+  width: 100vh;
+}
+
+.newpersp{
+  text-align: left;
+  /* font-size: 15px */
+}
+
+.newpersp span{
+  font-weight: 700;
+}
+
+.consult{
+  background-color: rgb(0, 0, 0);
+  color: white;
+  display: flex;
+  justify-content: center;
+  border-radius: 90px;
+  width: 30vh;
+  padding: 10px;
+  font-weight: 500;
+  transition: color .3s ease-in ;
+}
+
+
+
+.consult:hover {
+  color: #fdb540;
+}
+
+.consult a{
+  list-style: none;
+  text-decoration: none; 
+  color: white;
+}
+
+#consultbutton {
+  text-decoration: none;
+  transition:color 0.3s; /* Add color transition */
+}
+
+
+.bannerimg img{
+  width: 200vh;
+}
+
+/* new page 3 */
+.newpage3{
+  font-family:'Roboto Condensed';
+  padding: 70px;
+}
+
+.placesNum{
+  justify-content: space-between;
+  /* border-style: solid; */
+  display: flex;
+  width: 25vh;
+  align-items: center;
+}
+
+.insidepn{
+  /* border-style: solid; */
+  padding-left: 10px;
+  border-color: red;
+  width: 50vh;
+  display: flex;
+  justify-content:space-between
+}
+
+.numofp{
+  font-weight: 700;
+  padding-right: 10px;
+  line-height: 1;
+}
+
+.pdoc{
+  padding-left: 15px;
+  border-left: solid;
+  line-height: 1;
+}
+
+#Vseal2{
+  width: 2.3rem;
+}
+
+.notable{
+  padding-top: 30px;
+}
+
+.notable span{
+  font-weight: 700;
+}
+
+.np3cont{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  /* border-style: solid; */
+  border-right: solid;
+  width: 50vh;
+}
+
+.p3title{
+  font-weight: 700;
+}
+
+/* new page 4 */
+
+.thanks{
+  display: flex;
+  justify-content: center;
+  padding: 90px;
+}
+
+.thankyou{
+  display: flex;
+  justify-content: space-between;
+  width: 130vh;
+  /* border-style: solid; */
+}
+
+.letter{
+  /* border-style: solid; */
+  border-color: red;
+  padding:50px;
+  width: 90vh;
+}
+
+.letter h3{
+  font-size: 3rem;  
+  font-weight: 700;
+}
+
+#tyimg{
+  width: 25rem;
+  
+}
+
+/* page 1 */
+.page1{
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.card-header{
+  font-size: 2rem;
+  font-family:'Roboto Condensed';
+  font-weight: bolder;  
+  /* font-style: italic; */
+  /* text-decoration:underline; */
+  color: rgb(255, 255, 255);
+  background-color: white;
+  margin-top: 20px;
+  /* width: 90vw; */
+}
+
+.card-header p{
+  text-align: center;
+  border-style: solid;
+  width: 60vh;
+  background-color:black ;
+  /* border-radius: 25px; */
+  padding: 10px;
+}
+
+.text-center{
+  width: 150vh;
+  background-color: rgba(255, 255, 255, 0);
+  overflow-x: hidden;
+  border-style: none;
+  /* box-shadow: 0px 10px 6px #00000097; */
+  display: flex;
+  justify-content: center;
+
+}
+
+.socials{
+  display: flex;
+  justify-content: space-evenly;
+  border-bottom: solid;
+  border-color: #D2D2D2;
+  border-width: thin;
+  padding-bottom: 15px;
+  /* width: 40vh; */
+}
+
+.YT{
+  display: flex;
+  align-items: center;
+  /* border-style: solid; */
+}
+
+.Ytlink{
+  width: 15rem;
+}
+
+.FB{
+  display: flex;
+  align-items: center;
+  /* border-style: solid; */
+  padding-right:50px ;
+}
+
+.IG{
+  display: flex;
+  align-items: center;
+  /* border-style: solid; */
+  padding-right:5.3vh ;
+}
+
+.FBlink{
+  width: 15rem;
+}
+
+.IGlink{
+  width: 8rem;
+} 
+
+/* page 2 */
+.page2{
+  padding-top: 30px;
+  padding-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  /* border-top: solid; */
+  background-image: linear-gradient(to right, #fdb540 , #f5cc8b);
+}
+
+.contentlabel{
+  display: flex;
+  justify-content: left;
+  font-size: 4rem;
+  /* width: 90vh ; */
+  font-family:'Roboto Condensed';
+  font-weight: 900;  
+  color: rgb(0, 0, 0);
+  /* background-color: white; */
+  /* margin-top: 20px; */
+
+}
+
+.contentlabel p{
+  text-align: center;
+  width: 130vh;
+  padding: 10px;
+  /* border-style: solid; */
+}
+
+/* testpage3 */
+.page3{
+  display: flex;
+  /* justify-content: space-evenly; */
+  /* border-bottom: solid; */
+  padding: 50px;
+  padding-bottom: 30px;
+  /* position: relative;
+  bottom: 70px; */
+}
+
+
+.card-img-overlay{
+  background-image: linear-gradient(180deg, rgba(237, 0, 0, 0), rgba(164, 101, 7, 0), rgba(0, 0, 0, 0.744));
+  display: flex;
+  align-items: flex-end;
+}
+
+.text-bg-dark{
+  /* border-radius: 0px; */
+  border-style: none;
+}
+
+.card-img-overlay h5{
+  font-size: 2rem;
+}
+
+
+.cont1{
+border-radius: 5px;
+width: 60vh;
+/* box-shadow: 1px 2px 5px #333232; */
+
+}
+
+@media(max-width: 1610px){
+  /* .nav-bar{
+    width: 60vh;
+  } */
+}
+
+
+  @media(max-width: 1420px){
+    /* .nav-bar{} */
+    .booknowcont{
+      width: 75vh;
+    }
+    }
+
+    @media(max-width: 1400px){
+      /* .nav-bar{} */
+      .booknowcont{
+        width: 75vh;
+      }
+      }
+
+      @media(max-width: 1390px){
+        /* .nav-bar{} */
+        .booknowcont{
+          width: 60vh;
+        }
+        }
+
+        @media(max-width: 1330px){
+          /* .nav-bar{} */
+          .booknowcont{
+            width: 65vh;
+          }
+          }
+          @media(max-width: 1290px){
+            /* .nav-bar{} */
+            .booknowcont{
+              width: 60vh;
+            }
+            }
+            @media(max-width: 1250px){
+              /* .nav-bar{} */
+              .booknowcont{
+                width: 55vh;
+              }
+              }
+              @media(max-width: 1210px){
+                /* .nav-bar{} */
+                .booknowcont{
+                  width: 50vh;
+                }
+                }
+
+                @media(max-width:1180px){
+                  /* .newpage2banner{
+                      border-style: solid;
+                    } */
+
+                    #bannerimgoverlay{
+                      /* border-style: solid; */
+                      border-color: red;
+                      margin-left: 43vh;
+                      width: 85vh;
+                    }
+
+                    .bannerimgoverlay{
+                      /* border-style: solid; */
+                      border-color: aqua;
+                    }
+
+                    .p1c{
+                      width: 80vh;
+                    }
+
+                    .newpersp{
+                      /* border-style: solid; */
+                      text-align: left;
+                      /* font-size: 15px */
+                      justify-content: center;
+                    }
+                    
+                    .newpersp span{
+                      font-weight: 700;
+                    }
+
+                    .newpersp p{
+                      font-size: 15px;
+                    }
+                    
+                    .consult{
+                      width: 30vh;
+                      padding: 10px;
+                      font-weight: 500;
+                    }
+                    
+                    .consult a{
+                      list-style: none;
+                      text-decoration: none; 
+                      color: white;
+                    }
+
+                    .bannerimgoverlay{
+                      width:50% ;
+                    }
+                }
+
+                @media(max-width: 1160px){
+                  /* .nav-bar{} */
+                  .booknowcont{
+                    width: 85vh;
+                    /* border-style: solid; */
+                    border-color: yellow;
+                    justify-content: center;
+                    
+                  }
+
+                  /* .newpage2banner{
+                      border-style: solid;
+                    } */
+
+                    #bannerimgoverlay{
+                      /* border-style: solid; */
+                      border-color: red;
+                      margin-left: 43vh;
+                      width: 85vh;
+                    }
+
+                    .bannerimgoverlay{
+                      /* border-style: solid; */
+                      border-color: aqua;
+                    }
+
+                    .p1c{
+                      width: 80vh;
+                    }
+
+                    .newpersp{
+                      /* border-style: solid; */
+                      text-align: left;
+                      /* font-size: 15px */
+                      justify-content: center;
+                    }
+                    
+                    .newpersp span{
+                      font-weight: 700;
+                    }
+
+                    .newpersp p{
+                      font-size: 15px;
+                    }
+                    
+                    .consult{
+                      width: 30vh;
+                      padding: 10px;
+                      font-weight: 500;
+                    }
+                    
+                    .consult a{
+                      list-style: none;
+                      text-decoration: none; 
+                      color: white;
+                    }
+
+                    .bannerimgoverlay{
+                      width:50% ;
+                    }
+  
+                  }
+               
+                    @media(max-width: 1150px){
+                      /* .newpage2banner{
+                      border-style: solid;
+                    } */
+
+                    #bannerimgoverlay{
+                      /* border-style: solid; */
+                      border-color: red;
+                      margin-left: 43vh;
+                      width: 85vh;
+                    }
+
+                    .bannerimgoverlay{
+                      /* border-style: solid; */
+                      border-color: aqua;
+                    }
+
+                    .p1c{
+                      width: 80vh;
+                    }
+
+                    .newpersp{
+                      /* border-style: solid; */
+                      text-align: left;
+                      /* font-size: 15px */
+                      justify-content: center;
+                    }
+                
+                    .bannerimgoverlay{
+                      width:50% ;
+                    }
+
+                    .contentlabel{
+                      width: 90vh;
+                    }
+
+                    .contentlabel p{
+                      width: 90vh;
+                    }
+
+                    .thanks{
+                      padding: 80px;
+                      /* width: ; */
+                    }
+
+                    .thankyou{
+                    
+                      border-style: solid;
+                    }
+                    
+                    }
+
+                    @media(max-width: 1130px){
+                    
+                      #V-skylogo{
+                        width: 15rem;
+                    }
+
+                    .nav-bar{
+                      width: 120vh;
+                    }
+
+                    /* .newpage2banner{
+                      border-style: solid;
+                    } */
+
+                    #bannerimgoverlay{
+                      /* border-style: solid; */
+                      border-color: red;
+                      justify-content: center;
+                      margin-left: 40vh;
+                      width: 85vh;
+                    }
+
+                    .bannerimgoverlay{
+                      /* border-style: solid;  */
+                      border-color: aqua;
+                    }
+
+                    .p1c{
+                      width: 80vh;
+                    }
+
+                    .newpersp{
+                      /* border-style: solid; */
+                      text-align: left;
+                      /* font-size: 15px */
+                      justify-content: center;
+                    }
+                    
+                    .newpersp span{
+                      font-weight: 700;
+                    }
+
+                    .newpersp p{
+                      font-size: 15px;
+                    }
+                    
+                    .consult{
+                      background-color: rgb(0, 0, 0);
+                      color: white;
+                      display: flex;
+                      justify-content: center;
+                      border-radius: 90px;
+                      width: 30vh;
+                      padding: 10px;
+                      font-weight: 500;
+                    }
+                    
+                    .consult a{
+                      list-style: none;
+                      text-decoration: none; 
+                      color: white;
+                    }
+
+                    .bannerimgoverlay{
+                      width:50% ;
+                    }
+
+                    }
+
+
+                    @media(max-width: 1100px){
+
+                      .booknowcont{
+                        width: 40vh;
+                        /* border-style: solid; */
+                        border-color: yellow;
+                        justify-content: center;
+                      }
+                    
+                      #V-skylogo{
+                        width: 15rem;
+                    }
+
+                    .nav-bar{
+                      width: 120vh;
+                    }
+
+                    /* .newpage2banner{
+                      border-style: solid;
+                    } */
+
+                    #bannerimgoverlay{
+                      /* border-style: solid; */
+                      border-color: red;
+                      margin-left: 40vh;
+                      width: 80vh;
+                    }
+
+                    .bannerimgoverlay{
+                      /* border-style: solid; */
+                      border-color: aqua;
+                    }
+
+                    .p1c{
+                      width: 60vh;
+                    }
+
+                    .newpersp{
+                      /* border-style: solid; */
+                      text-align: left;
+                      /* font-size: 15px */
+                      justify-content: center;
+                    }
+                    
+                    .newpersp span{
+                      font-weight: 700;
+                    }
+
+                    .newpersp p{
+                      font-size: 15px;
+                    }
+                    
+                    .consult{
+                      width: 30vh;
+                      padding: 10px;
+                      font-weight: 500;
+                    }
+                    
+                    .consult a{
+                      list-style: none;
+                      text-decoration: none; 
+                      color: white;
+                    }
+
+                    .bannerimgoverlay{
+                      width:50% ;
+                    }
+                    }
+
+                    @media(max-width:1160px){
+                      /* .newpage2banner{
+                      border-style: solid;
+                    } */
+
+                    #bannerimgoverlay{
+                      /* border-style: solid; */
+                      border-color: red;
+                      margin-left: 43vh;
+                      width: 60vh;
+                    }
+
+                    .bannerimgoverlay{
+                      /* border-style: solid; */
+                      border-color: aqua;
+                    }
+
+                    .p1c{
+                      width: 80vh;
+                    }
+
+                    .newpersp{
+                      /* border-style: solid; */
+                      text-align: left;
+                      /* font-size: 15px */
+                      justify-content: center;
+                    }
+                    
+                    .newpersp span{
+                      font-weight: 700;
+                    }
+
+                    .newpersp p{
+                      font-size: 15px;
+                    }
+                    
+                    .consult{
+                      width: 30vh;
+                      padding: 10px;
+                      font-weight: 500;
+                    }
+                    
+                    .consult a{
+                      list-style: none;
+                      text-decoration: none; 
+                      color: white;
+                    }
+
+                    .bannerimgoverlay{
+                      width:50% ;
+                    }
+                    }
+
+                    @media(max-width: 1050px){
+                      #bannerimgoverlay{
+                        /* border-style: solid; */
+                        border-color: red;
+                        margin-left: 0vh;
+                        width:1px;
+                      }
+  
+                      .bannerimgoverlay{
+                        margin-left: 34.3vh;
+                        /* border-style: solid; */
+                        border-color: aqua;
+                      }
+  
+                      .p1c{
+                        width: 35vh;
+                      }
+  
+                      #p1{
+                         /* border-style: solid; */
+                         border-color: pink;
+                         width: 30vh; 
+                        font-size: 4rem;
+                      }
+  
+                      .newpersp{
+                        /* border-style: solid; */
+                        text-align: left;
+                        /* font-size: 15px */
+                        justify-content: center;
+                      }
+                      
+                      .newpersp span{
+                        font-weight: 700;
+                        font-size: 1.2rem;
+                      }
+  
+                      .newpersp p{
+                        font-size: 15px;
+                      }
+                      
+                      .consult{
+                        width: 30vh;
+                        /* font-size: large; */
+                        padding: 10px;
+                        font-weight: 500;
+                      }
+                      
+                      .consult a{
+                        list-style: none;
+                        text-decoration: none; 
+                        color: white;
+                      }
+  
+                      .bannerimgoverlay{
+                        width:50% ;
+                      }
+  
+                      .newpage3{
+                        padding-left: 7.6vh;
+                      }
+  
+                      .np3cont{
+                        border-right: none;
+                        border-bottom: solid;
+                        width: 60vh;
+                        padding-left: 0vh;
+                       
+                      }
+  
+                      .p3title{
+                        font-size: 4rem;
+                        text-align: center;
+                      }
+  
+                      .np3cont p{
+                        text-align: center;
+                        padding-top: 20px;
+                        font-size: 1.6rem;
+                      }
+  
+                      .placesNum{
+                        padding-left: 16vh;
+                      }
+  
+                      #Vseal2{
+                        width: 7rem;
+                      }
+  
+                      .numofp{
+                        font-size: 1.6rem;
+                      }
+  
+                      .pdoc{
+                        font-size: 1.6rem;
+                      }
+  
+                      .card-header p{
+                        width: 30vh;
+                        font-size: 20px;
+                      }
+  
+                      .socials{
+                        margin-right: 41px;
+                      }
+                      
+                      .Ytlink, .FBlink, .IGlink{
+                        width: 9rem;
+                      }
+  
+                      .FB{
+                        padding-right: 0px;
+                        padding-left: 0px;
+                      }
+  
+                      .IGlink{
+                        width: 6rem;
+                      }
+  
+                      .IG{
+                        padding-right: 0px;
+                      }
+
+                    }
+
+
+                    @media(max-width: 1000px){
+                    
+
+                    /* .newpage2banner{
+                      border-style: solid;
+                    } */
+
+                    #bannerimgoverlay{
+                      /* border-style: solid; */
+                      border-color: red;
+                      margin-left: 10vh;
+                      width: 100vh;
+                    }
+
+                    .bannerimgoverlay{
+                      margin-left: 15.5vh;
+                      /* border-style: solid; */
+                      border-color: aqua;
+                    }
+
+                    .p1c{
+                      width: 70vh;
+                    }
+
+                    .newpersp{
+                      /* border-style: solid; */
+                      text-align: left;
+                      /* font-size: 15px */
+                      justify-content: center;
+                    }
+                    
+                    .newpersp span{
+                      font-weight: 700;
+                    }
+
+                    .newpersp p{
+                      font-size: 15px;
+                    }
+                    
+                    .consult{
+                      width: 30vh;
+                      padding: 10px;
+                      font-weight: 500;
+                    }
+                    
+                    .consult a{
+                      list-style: none;
+                      text-decoration: none; 
+                      color: white;
+                    }
+
+                    .bannerimgoverlay{
+                      width:50% ;
+                    }
+                    
+                    .thanks{
+                      display: flex;
+                      justify-content: center;
+                      padding: 90px;
+                      /* border-style: solid; */
+                    }
+                    
+                    .thankyou{
+                      display: flex;
+                      justify-content: space-between;
+                      width: 130vh;
+                      /* border-style: solid; */
+                    }
+                    
+                    .letter{
+                      /* border-style: solid; */
+                      border-color: red;
+                      padding:10px;
+                      width: 90vh;
+                    }
+
+                    .letter h3{
+                      font-size: 3rem;  
+                      /* font-weight: 700; */
+                    }
+                    
+                    #tyimg{
+                      width: 25rem;
+                      
+                    }
+                    }
+
+                    @media (max-width:982px){
+                      
+                    /* .newpage2banner{
+                      border-style: solid;
+                    } */
+
+                    #bannerimgoverlay{
+                      /* border-style: solid; */
+                      border-color: red;
+                      margin-left: 12.9vh;
+                      width: 90vh;
+                    }
+
+                    .bannerimgoverlay{
+                      margin-left: 15.5vh;
+                      /* border-style: solid; */
+                      border-color: aqua;
+                    }
+
+                    .p1c{
+                      width: 70vh;
+                    }
+
+                    .newpersp{
+                      /* border-style: solid; */
+                      text-align: left;
+                      /* font-size: 15px */
+                      justify-content: center;
+                    }
+                    
+                    .newpersp span{
+                      font-weight: 700;
+                    }
+
+                    .newpersp p{
+                      font-size: 15px;
+                    }
+                    
+                    .consult{
+                      width: 30vh;
+                      padding: 10px;
+                      font-weight: 500;
+                    }
+                    
+                    .consult a{
+                      list-style: none;
+                      text-decoration: none; 
+                      color: white;
+                    }
+
+                    .bannerimgoverlay{
+                      width:50% ;
+                    }
+                    }
+
+                    @media(max-width: 950px){
+                    
+                      #V-skylogo{
+                        width: 15rem;
+                    }
+
+                    .nav-bar{
+                      width: 110vh;
+                    }
+
+                    
+                    /* .newpage2banner{
+                      border-style: solid;
+                    } */
+
+                    #bannerimgoverlay{
+                      /* border-style: solid; */
+                      border-color: red;
+                      margin-left: 0vh;
+                      width:50vh;
+                    }
+
+                    .bannerimgoverlay{
+                      margin-left: 35vh;
+                      /* border-style: solid; */
+                      border-color: aqua;
+                    }
+
+                    .p1c{
+                      width: 50vh;
+                    }
+
+                    #p1{
+                       /* border-style: solid; */
+                       border-color: pink;
+                       width: 50vh; 
+                      font-size: 3rem;
+                    }
+
+                    .newpersp{
+                      /* border-style: solid; */
+                      text-align: left;
+                      /* font-size: 15px */
+                      justify-content: center;
+                    }
+                    
+                    .newpersp span{
+                      font-weight: 700;
+                    }
+
+                    .newpersp p{
+                      font-size: 15px;
+                    }
+                    
+                    .consult{
+                      width: 30vh;
+                      /* font-size: large; */
+                      padding: 10px;
+                      font-weight: 500;
+                    }
+                    
+                    .consult a{
+                      list-style: none;
+                      text-decoration: none; 
+                      color: white;
+                    }
+
+                    .bannerimgoverlay{
+                      width:50% ;
+                    }
+                    }
+
+                    @media(max-width: 932px){
+                    
+                      #V-skylogo{
+                        width: 15rem;
+                    }
+
+                    .nav-bar{
+                      width: 195vh;
+                    }
+
+                    .menu{
+                      overflow-y:scroll ;
+                    }
+
+                    .booknowcont{
+                      margin-left: 30px;
+                      padding-top: 10px;
+                    }
+
+                    .booknow{
+                      width: 30vh;
+                    }
+
+                    }
+
+                    @media(max-width:910px){
+                       /* .newpage2banner{
+                      border-style: solid;
+                    } */
+
+                    #bannerimgoverlay{
+                      /* border-style: solid; */
+                      border-color: red;
+                      margin-left: 0vh;
+                      width:40vh;
+                    }
+
+                    .bannerimgoverlay{
+                      /* margin-left: 35vh; */
+                      /* border-style: solid; */
+                      border-color: aqua;
+                    }
+
+                    .p1c{
+                      /* border-style: solid; */
+                      margin-left: 90px;
+                      padding-left: 90px;
+                      width: 73vh;
+                    }
+
+                    #p1{
+                      /* border-style: solid; */
+                      border-color: pink;
+                      font-size: 3rem;
+                      width: 40vh;
+                    }
+
+                    .newpersp{
+                      /* border-style: solid; */
+                      text-align: left;
+                      /* font-size: 15px */
+                      justify-content: center;
+                    }
+                    
+                    .newpersp span{
+                      font-weight: 700;
+                    }
+
+                    .newpersp p{
+                      font-size: 15px;
+                    }
+                    
+                    .consult{
+                      width: 30vh;
+                      /* font-size: large; */
+                      padding: 10px;
+                      font-weight: 500;
+                    }
+                    
+                    .consult a{
+                      list-style: none;
+                      text-decoration: none; 
+                      color: white;
+                    }
+
+                    .bannerimgoverlay{
+                      width:30% ;
+                    }
+                    }
+
+                    @media(max-width: 900px){
+                    
+                      #V-skylogo{
+                        width: 15rem;
+                    }
+
+                    .nav-bar{
+                      width: 110vh;
+                    }
+
+                     /* .newpage2banner{
+                      border-style: solid;
+                    } */
+
+                    #bannerimgoverlay{
+                      /* border-style: solid; */
+                      border-color: red;
+                      margin-left: 0vh;
+                      width:40vh;
+                    }
+
+                    .bannerimgoverlay{
+                      /* margin-left: 35vh; */
+                      /* border-style: solid; */
+                      border-color: aqua;
+                    }
+
+                    .p1c{
+                      /* border-style: solid; */
+                      margin-left: 90px;
+                      padding-left: 90px;
+                      width: 73vh;
+                    }
+
+                    #p1{
+                      /* border-style: solid; */
+                      border-color: pink;
+                      font-size: 3rem;
+                      width: 40vh;
+                    }
+
+                    .newpersp{
+                      /* border-style: solid; */
+                      text-align: left;
+                      /* font-size: 15px */
+                      justify-content: center;
+                    }
+                    
+                    .newpersp span{
+                      font-weight: 700;
+                    }
+
+                    .newpersp p{
+                      font-size: 15px;
+                    }
+                    
+                    .consult{
+                      width: 30vh;
+                      /* font-size: large; */
+                      padding: 10px;
+                      font-weight: 500;
+                    }
+                    
+                    .consult a{
+                      list-style: none;
+                      text-decoration: none; 
+                      color: white;
+                    }
+
+                    .bannerimgoverlay{
+                      width:30% ;
+                    }
+                  }
+
+                  @media(max-width:830px){
+
+                    #bannerimgoverlay{
+                      /* border-style: solid; */
+                      border-color: red;
+                      margin-left: 0vh;
+                      width:1px;
+                    }
+
+                    .bannerimgoverlay{
+                      margin-left: 26.4vh;
+                      /* border-style: solid; */
+                      border-color: aqua;
+                    }
+
+                    .p1c{
+                      width: 35vh;
+                    }
+
+                    #p1{
+                       /* border-style: solid; */
+                       border-color: pink;
+                       width: 30vh; 
+                      font-size: 3rem;
+                    }
+
+                    .newpersp{
+                      /* border-style: solid; */
+                      text-align: left;
+                      /* font-size: 15px */
+                      justify-content: center;
+                    }
+                    
+                    .newpersp span{
+                      font-weight: 700;
+                    }
+
+                    .newpersp p{
+                      font-size: 15px;
+                    }
+                    
+                    .consult{
+                      width: 30vh;
+                      /* font-size: large; */
+                      padding: 10px;
+                      font-weight: 500;
+                    }
+                    
+                    .consult a{
+                      list-style: none;
+                      text-decoration: none; 
+                      color: white;
+                    }
+
+                    .bannerimgoverlay{
+                      width:50% ;
+                    }
+
+                    .newpage3{
+                      padding-left: 4.5vh;
+                    }
+
+                    .np3cont{
+                      border-right: none;
+                      border-bottom: solid;
+                      width: 60vh;
+                      padding-left: 0vh;
+                     
+                    }
+
+                    .p3title{
+                      font-size: 3rem;
+                      text-align: center;
+                    }
+
+                    .np3cont p{
+                      text-align: center;
+                      font-size: 1.5rem;
+                    }
+
+                    .placesNum{
+                      padding-top: 10px;
+                      padding-left: 17vh;
+                    }
+
+                    #Vseal2{
+                      width: 5rem;
+                    }
+
+                    .numofp{
+                      font-size: 1.3rem;
+                    }
+
+                    .pdoc{
+                      font-size: 1.3rem;
+                    }
+
+                    .card-header p{
+                      width: 30vh;
+                      font-size: 20px;
+                    }
+
+                    .socials{
+                      margin-right: 41px;
+                    }
+                    
+                    .Ytlink, .FBlink, .IGlink{
+                      width: 9rem;
+                    }
+
+                    .FB{
+                      padding-right: 0px;
+                      padding-left: 0px;
+                    }
+
+                    .IGlink{
+                      width: 6rem;
+                    }
+
+                    .IG{
+                      padding-right: 0px;
+                    }
+                  }
+
+                    @media(max-width: 780px){
+
+                    #bannerimgoverlay{
+                      /* border-style: solid; */
+                      border-color: red;
+                      margin-left: 0vh;
+                      width:10vh;
+                    }
+
+                    .bannerimgoverlay{
+                      margin-left: 27.4vh;
+                      /* border-style: solid; */
+                      border-color: aqua;
+                    }
+
+                    .p1c{
+                      width: 50vh;
+                    }
+
+                    #p1{
+                       /* border-style: solid; */
+                       border-color: pink;
+                       width: 30vh; 
+                      font-size: 3rem;
+                    }
+
+                    .newpersp{
+                      /* border-style: solid; */
+                      text-align: left;
+                      /* font-size: 15px */
+                      justify-content: center;
+                    }
+                    
+                    .newpersp span{
+                      font-weight: 700;
+                    }
+
+                    .newpersp p{
+                      font-size: 15px;
+                    }
+                    
+                    .consult{
+                      width: 30vh;
+                      /* font-size: large; */
+                      padding: 10px;
+                      font-weight: 500;
+                    }
+                    
+                    .consult a{
+                      list-style: none;
+                      text-decoration: none; 
+                      color: white;
+                    }
+
+                    .bannerimgoverlay{
+                      width:50% ;
+                    }
+
+                    .newpage3{
+                      padding-left: 7.4vh;
+                    }
+
+                    .np3cont{
+                      border-right: none;
+                      border-bottom: solid;
+                      width: 60vh;
+                      padding-left: 0vh;
+                     
+                    }
+
+                    .p3title{
+                      font-size: 3rem;
+                      text-align: center;
+                    }
+
+                    .np3cont p{
+                      text-align: center;
+                      font-size: 1.5rem;
+                    }
+
+                    .placesNum{
+                      padding-left: 14vh;
+                    }
+
+                    #Vseal2{
+                      width: 5rem;
+                    }
+
+                    .numofp{
+                      font-size: 1.3rem;
+                    }
+
+                    .pdoc{
+                      font-size: 1.3rem;
+                    }
+
+                    .card-header p{
+                      width: 30vh;
+                      font-size: 20px;
+                    }
+
+                    .socials{
+                      margin-right: 41px;
+                    }
+                    
+                    .Ytlink, .FBlink, .IGlink{
+                      width: 9rem;
+                    }
+
+                    .FB{
+                      padding-right: 0px;
+                      padding-left: 0px;
+                    }
+
+                    .IGlink{
+                      width: 6rem;
+                    }
+
+                    .IG{
+                      padding-right: 0px;
+                    }
+                    }
+
+                    @media(max-width: 750px){
+                  
+
+                    /* .newpage2banner{
+                      border-style: solid;
+                    } */
+
+                    #bannerimgoverlay{
+                      /* border-style: solid; */
+                      border-color: red;
+                      margin-left: 0vh;
+                      width:5vh;
+                    }
+
+                    .bannerimgoverlay{
+                      margin-left: 35vh;
+                      /* border-style: solid; */
+                      border-color: aqua;
+                    }
+
+                    .p1c{
+                      width: 50vh;
+                    }
+
+                    #p1{
+                       /* border-style: solid; */
+                       border-color: pink;
+                       width: 30vh; 
+                      font-size: 3rem;
+                    }
+
+                    .newpersp{
+                      /* border-style: solid; */
+                      text-align: left;
+                      /* font-size: 15px */
+                      justify-content: center;
+                    }
+                    
+                    .newpersp span{
+                      font-weight: 700;
+                    }
+
+                    .newpersp p{
+                      font-size: 15px;
+                    }
+                    
+                    .consult{
+                      width: 30vh;
+                      /* font-size: large; */
+                      padding: 10px;
+                      font-weight: 500;
+                    }
+                    
+                    .consult a{
+                      list-style: none;
+                      text-decoration: none; 
+                      color: white;
+                    }
+
+                    .bannerimgoverlay{
+                      width:50% ;
+                    }
+
+                    }
+
+                    @media(max-width: 710px){
+                  
+                    /* .newpage2banner{
+                      border-style: solid;
+                    } */
+
+                    #bannerimgoverlay{
+                      /* border-style: solid; */
+                      border-color: red;
+                      margin-left: 0vh;
+                      width:53vh;
+                  
+                    }
+
+                    .bannerimgoverlay{
+                      margin-left: 25vh;
+                      /* border-style: solid; */
+                      border-color: aqua;
+                      flex-direction: column;
+                    }
+
+                    .p1c{
+                      /* border-style: solid; */
+                      border-color: brown;
+                      margin-left: 0px;
+                      padding-left: 50px;
+                      width: 42vh;
+                    }
+
+                    #p1{
+                       /* border-style: solid; */
+                       border-color: pink;
+                       width: 30vh; 
+                       text-align: center;
+                      font-size: 2rem;
+                    }
+
+                    .newpersp{
+                      /* border-style: solid; */
+                      text-align: left;
+                      /* font-size: 15px */
+                      justify-content: center;
+                    }
+                    
+                    .newpersp span{
+                      font-weight: 700;
+                    }
+
+                    .newpersp p{
+                      text-align: center;
+                      font-size: 12px;
+                    }
+                    
+                    .consult{
+                      width: 50vh;
+                      /* font-size: large; */
+                      padding: 10px;
+                      font-weight: 500;
+                    }
+                    
+                    .consult a{
+                      list-style: none;
+                      text-decoration: none; 
+                      color: white;
+                    }
+
+                    .bannerimgoverlay{
+                      width:50% ;
+                    }
+
+                    }
+
+                    @media(max-width: 605px){
+
+                    /* .newpage2banner{
+                      border-style: solid;
+                    } */
+
+                    #bannerimgoverlay{
+                      /* border-style: solid; */
+                      border-color: red;
+                      margin-left: 0vh;
+                      width:50vh;
+                  
+                    }
+
+                    .bannerimgoverlay{
+                      margin-left: 25vh;
+                      /* border-style: solid; */
+                      border-color: aqua;
+                      flex-direction: column;
+                    }
+
+                    .p1c{
+                      /* border-style: solid; */
+                      border-color: brown;
+                      margin-left: 0px;
+                      padding-left: 50px;
+                      width: 42vh;
+                    }
+
+                    #p1{
+                       /* border-style: solid; */
+                       border-color: pink;
+                       width: 30vh; 
+                       text-align: center;
+                      font-size: 2rem;
+                    }
+
+                    .newpersp{
+                      /* border-style: solid; */
+                      text-align: left;
+                      /* font-size: 15px */
+                      justify-content: center;
+                    }
+                    
+                    .newpersp span{
+                      font-weight: 700;
+                    }
+
+                    .newpersp p{
+                      text-align: center;
+                      font-size: 12px;
+                    }
+                    
+                    .consult{
+                      width: 50vh;
+                      /* font-size: large; */
+                      padding: 10px;
+                      font-weight: 500;
+                    }
+                    
+                    .consult a{
+                      list-style: none;
+                      text-decoration: none; 
+                      color: white;
+                    }
+
+                    .bannerimgoverlay{
+                      width:50% ;
+                    }
+
+
+                    }
+
+                    @media(max-width: 580px){
+
+                    /* .newpage2banner{
+                      border-style: solid;
+                    } */
+
+                    #bannerimgoverlay{
+                      /* border-style: solid; */
+                      border-color: red;
+                      margin-left: 0vh;
+                      width:22vh;
+                  
+                    }
+
+                    .bannerimgoverlay{
+                      margin-left: 25vh;
+                      /* border-style: solid; */
+                      border-color: aqua;
+                      flex-direction: column;
+                    }
+
+                    .p1c{
+                      /* border-style: solid; */
+                      border-color: brown;
+                      margin-left: 0px;
+                      padding-left: 50px;
+                      width: 42vh;
+                    }
+
+                    #p1{
+                       /* border-style: solid; */
+                       border-color: pink;
+                       width: 30vh; 
+                       text-align: center;
+                      font-size: 2rem;
+                    }
+
+                    .newpersp{
+                      /* border-style: solid; */
+                      text-align: left;
+                      /* font-size: 15px */
+                      justify-content: center;
+                    }
+                    
+                    .newpersp span{
+                      font-weight: 700;
+                    }
+
+                    .newpersp p{
+                      text-align: center;
+                      font-size: 12px;
+                    }
+                    
+                    .consult{
+                      width: 50vh;
+                      /* font-size: large; */
+                      padding: 10px;
+                      font-weight: 500;
+                    }
+                    
+                    .consult a{
+                      list-style: none;
+                      text-decoration: none; 
+                      color: white;
+                    }
+
+                    .bannerimgoverlay{
+                      width:50% ;
+                    }
+
+                    }            
+
+                    
+                    @media(max-width: 455px){
+
+                    /* .newpage2banner{
+                      border-style: solid;
+                    } */
+
+                    #bannerimgoverlay{
+                      /* border-style: solid; */
+                      border-color: red;
+                      margin-left: 0vh;
+                      width:1vh;
+                  
+                    }
+
+                    .bannerimgoverlay{
+                      margin-left: 22vh;
+                      /* border-style: solid; */
+                      border-color: aqua;
+                      flex-direction: column;
+                    }
+
+                    .p1c{
+                      /* border-style: solid; */
+                      border-color: brown;
+                      margin-left: 0px;
+                      padding-left: 0px;
+                      width: 30vh;
+                    }
+
+                    #p1{
+                       /* border-style: solid; */
+                       border-color: pink;
+                       width: 30vh; 
+                       text-align: center;
+                      font-size: 2rem;
+                    }
+
+                    .newpersp{
+                      /* border-style: solid; */
+                      text-align: left;
+                      /* font-size: 15px */
+                      justify-content: center;
+                    }
+                    
+                    .newpersp span{
+                      font-weight: 700;
+                    }
+
+                    .newpersp p{
+                      text-align: center;
+                      font-size: 12px;
+                    }
+                    
+                    .consult{
+                      width: 30vh;
+                      /* font-size: large; */
+                      padding: 10px;
+                      font-weight: 500;
+                    }
+
+                    .newpage3{
+                      padding-left: 3.4vh;
+                    }
+
+                    .np3cont{
+                      border-right: none;
+                      border-bottom: solid;
+                      width: 40vh;
+                      padding-left: 0vh;
+                     
+                    }
+
+                    .p3title{
+                      font-size: 2.3rem;
+                      text-align: center;
+                    }
+
+                    .np3cont p{
+                      padding-top: 10px;
+                      text-align: center;
+                      font-size: 1rem;
+                    }
+
+                    .placesNum{
+                      padding-left: 6.4vh;
+                    }
+
+                    #Vseal2{
+                      width: 4rem;
+                    }
+
+                    .numofp{
+                      font-size: 1rem;
+                    }
+
+                    .pdoc{
+                      font-size: 1rem;
+                    }
+
+                    .card-header p{
+                      width: 30vh;
+                      font-size: 20px;
+                    }
+                    
+                    .consult a{
+                      list-style: none;
+                      text-decoration: none; 
+                      color: white;
+                    }
+
+                    .bannerimgoverlay{
+                      width:50% ;
+                    }
+
+
+                    .card-header p{
+                      width: 30vh;
+                      font-size: 20px;
+                    }
+
+                    .socials{
+                      padding-left: 4vh;
+                    }
+
+                    .Ytlink, .FBlink, .IGlink{
+                      width: 6rem;
+                    }
+
+                    .FB{
+                      padding-right: 0px;
+                      padding-left: 2vh;
+                    }
+
+                    .IGlink{
+                      width: 4rem;
+                    }
+
+                    .IG{
+                      padding-right: 0px;
+                      padding-left: 2vh;
+                    }
+
+                    }
+
+                    @media(max-width: 395px){
+
+                      #V-SkySeal{
+                        width: 21rem;
+                      }
+
+                      .np3cont{
+                        width: 100%;
+                        border-right: none;
+                        border-bottom: solid;
+                      }
+  
+                      #bannerimgoverlay{
+                        /* border-style: solid; */
+                        border-color: red;
+                        margin-left: 0vh;
+                        width:1vh;
+                    
+                      }
+  
+                      .bannerimgoverlay{
+                        margin-left: 22vh;
+                        /* border-style: solid; */
+                        border-color: aqua;
+                        flex-direction: column;
+                      }
+  
+                      .p1c{
+                        /* border-style: solid; */
+                        border-color: brown;
+                        margin-left: 0px;
+                        padding-left: 0px;
+                        width: 30vh;
+                      }
+  
+                      #p1{
+                         /* border-style: solid; */
+                         border-color: pink;
+                         width: 30vh; 
+                         text-align: center;
+                        font-size: 1.5rem;
+                      }
+  
+                      .newpersp{
+                        /* border-style: solid; */
+                        text-align: left;
+                        /* font-size: 15px */
+                        justify-content: center;
+                      }
+                      
+                      .newpersp span{
+                        font-weight: 700;
+                      }
+  
+                      .newpersp p{
+                        text-align: center;
+                        font-size: 12px;
+                      }
+                      
+                      .consult{
+                        width: 30vh;
+                        /* font-size: large; */
+                        padding: 10px;
+                        font-weight: 500;
+                      }
+                      
+                      .consult a{
+                        list-style: none;
+                        text-decoration: none; 
+                        color: white;
+                      }
+  
+                      .bannerimgoverlay{
+                        width:50% ;
+                      }
+
+                      
+                    .newpage3{
+                      padding-left: 3.4vh;
+                    }
+
+                    .np3cont{
+                      border-right: none;
+                      border-bottom: solid;
+                      width: 40vh;
+                      padding-left: 0vh;
+                     
+                    }
+
+                    .p3title{
+                      font-size: 2rem;
+                      text-align: center;
+                    }
+
+                    .np3cont p{
+                      text-align: center;
+                      font-size: 1rem;
+                    }
+
+                    .placesNum{
+                      padding-left: 5vh;
+                    }
+
+                    #Vseal2{
+                      width: 4rem;
+                    }
+
+                    .numofp{
+                      font-size: 1rem;
+                    }
+
+                    .pdoc{
+                      font-size: 1rem;
+                    }
+
+                    .card-header p{
+                      width: 30vh;
+                      font-size: 20px;
+                    }
+                    
+                    .consult a{
+                      list-style: none;
+                      text-decoration: none; 
+                      color: white;
+                    }
+
+                    .bannerimgoverlay{
+                      width:50% ;
+                    }
+
+
+                    .card-header p{
+                      width: 30vh;
+                      font-size: 20px;
+                    }
+
+                    .socials{
+                      padding-left: 3vh;
+                    }
+
+                    .Ytlink, .FBlink, .IGlink{
+                      width: 6rem;
+                    }
+
+                    .FB{
+                      padding-right: 0px;
+                      padding-left: 2vh;
+                    }
+
+                    .IGlink{
+                      width: 4rem;
+                    }
+
+                    .IG{
+                      padding-right: 0px;
+                      padding-left: 2vh;
+                    }
+
+  
+                      }
+
+              
+
+
+
